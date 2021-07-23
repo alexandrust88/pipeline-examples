@@ -15,13 +15,13 @@ pipeline {
       }
       steps {
         sh 'echo "FOO is $FOO and BAR is $BAR"'
-        sh 'exit 1 '
+        sh 'exit 0 '
       }
     }
     stage("global") {
       steps {
         sh 'echo "FOO is $FOO and BAR is $BAR"'
-        sh 'exit 1 '
+        sh 'exit 243 '
       }
     }
   }
